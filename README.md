@@ -15,7 +15,7 @@
 - Visual studio code
 - Visual studio code extensions
 
-  ### [**StencilJS**](1-stencil/1-stencil/1-introduccion.md)
+### [**StencilJS**](1-stencil/1-introduccion.md)
 
 - Configuracion del ambiente
 
