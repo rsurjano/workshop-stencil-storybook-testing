@@ -1,4 +1,4 @@
-# PRESENTACION
+# WORKSHOP
 
 <p float="left">
     <img src="https://user-images.githubusercontent.com/321738/63501763-88dbf600-c4cc-11e9-96cd-94adadc2fd72.png" alt="Workshop Stenciljs Storybook" width="300" />
@@ -6,7 +6,7 @@
     <img src="./jest-logo.png" alt="Workshop Stenciljs Storybook" width="300" />
 </p>
 
-## Workshop: Arquitectura StencilJS con Storybook y Aplicacion de pruebas unitarias y E2E
+## Arquitectura StencilJS con Storybook y Aplicacion de pruebas unitarias y E2E
 
 ### [**StencilJS**](stencil/0-configuracion-del-ambiente.md)
 
