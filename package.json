@@ -1,0 +1,9 @@
+{
+  "name": "workshop-stencil-storybook-testing",
+  "version": "0.0.1",
+  "description": "Workshop de StencilJS Storybook y Unit Testing",
+  "main": "index.js",
+  "author": "Roy Surjano",
+  "license": "MIT",
+  "private": true
+}
