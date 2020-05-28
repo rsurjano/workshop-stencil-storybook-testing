@@ -8,7 +8,14 @@
 
 ## Arquitectura StencilJS con Storybook y Aplicacion de pruebas unitarias y E2E
 
-### [**StencilJS**](stencil/0-configuracion-del-ambiente.md)
+### [**Configuracion**](0-configuracion/0-configuracion-del-ambiente.md)
+
+- Node v12.16.2+
+- Git
+- Visual studio code
+- Visual studio code extensions
+
+  ### [**StencilJS**](1-stencil/1-stencil/1-introduccion.md)
 
 - Configuracion del ambiente
 
