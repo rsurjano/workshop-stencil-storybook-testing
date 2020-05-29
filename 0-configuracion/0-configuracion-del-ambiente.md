@@ -30,7 +30,7 @@ git -v
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
-<img src="https://code.visualstudio.com/assets/home/home-screenshot-mac-lg-2x.png" width="750">
+<img src="vscode.png" width="750">
 
 ## Obteniendo las extensiones de Visual Studio Code
 
