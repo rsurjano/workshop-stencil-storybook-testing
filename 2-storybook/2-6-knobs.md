@@ -1,6 +1,10 @@
 # 2-7 Knobs
 
+Anteriormente se detallo el addon **Knob** de storybook por lo que ahora detallaremos mas sobre su uso para mejorar la interaccion con los componentes
+
 ## lista de Knobs
+
+Existe una amplia variedad de knobs que nos permitira interactivar con los componentes con controles como: sliders, radibuttons, checkboxes, cajas de texto, calendarios, entre otros, a continuacion los disponibles:
 
 - text
 - number
@@ -16,57 +20,57 @@
 
 ## Text
 
-Nombre - Valor
+> Nombre - Valor
 
 ```jsx
 text("Name", "Storyteller");
 ```
 
-![width:900px left:93%](text.PNG)
+![texto](text.PNG)
 
 ## number
 
-Nombre - Valor
+> Nombre - Valor
 
 ```jsx
 number("Years in NY", 9);
 ```
 
-![width:900px left:93%](number.PNG)
+![knob storybook](number.PNG)
 
 ## number with delimiter
 
-Nombre - Valor - {min, max, step}
+> Nombre - Valor - {min, max, step}
 
 ```jsx
 number("Dollars", 12.5, { min: 0, max: 100, step: 0.01 });
 ```
 
-![width:900px left:93%](number-with-range.PNG)
+![knob storybook](number-with-range.PNG)
 
 ## number with range
 
-Nombre - Valor - {range, min, max, step}
+> Nombre - Valor - {range, min, max, step}
 
 ```jsx
 number("Age", 70, { range: true, min: 0, max: 90, step: 5 });
 ```
 
-![width:900px left:93%](number-with-range2.PNG)
+![knob storybook](number-with-range2.PNG)
 
 ## boolean
 
-Nombre, Valor
+> Nombre, Valor
 
 ```jsx
 boolean("Nice", true);
 ```
 
-![width:900px left:93%](boolean.PNG)
+![knob storybook](boolean.PNG)
 
 ## color
 
-Nombre - Valor
+> Nombre - Valor
 
 ```jsx
 color("Background", "rgba(20, 184, 184, 1)");
@@ -74,7 +78,7 @@ color("Background", "rgba(20, 184, 184, 1)");
 
 ## select
 
-Nombre - Valor - Valor por defecto
+> Nombre - Valor - Valor por defecto
 
 ```jsx
 const fruits = {
@@ -85,11 +89,11 @@ const fruits = {
 select("Fruit", fruits, "apple");
 ```
 
-![width:900px left:93%](select.PNG)
+![knob storybook](select.PNG)
 
 ## multi-select
 
-Nombre - Valor - Valor por defecto - Modificador
+> Nombre - Valor - Valor por defecto - Modificador
 
 ```jsx
 const valuesMultiSelect = {
@@ -102,11 +106,11 @@ options("Multi Select", valuesMultiSelect, ["apple"], {
 });
 ```
 
-![width:900px left:93%](multi-select.PNG)
+![knob storybook](multi-select.PNG)
 
 ## radios
 
-Nombre - Items - Valor
+> Nombre - Items - Valor
 
 ```jsx
 const otherFruits = {
@@ -117,11 +121,11 @@ const otherFruits = {
 radios("Other Fruit", otherFruits, "watermelon");
 ```
 
-![width:900px left:93%](radios.PNG)
+![knob storybook](radios.PNG)
 
 ## Inline Radio
 
-Nombre - Items - Valor - Modificador
+> Nombre - Items - Valor - Modificador
 
 ```jsx
 const valuesInlineRadio = {
@@ -133,11 +137,11 @@ options("Inline Radio", valuesInlineRadio, "Saturday", {
 });
 ```
 
-![width:900px left:93%](inline-radio.PNG)
+![knob storybook](inline-radio.PNG)
 
 ## Check
 
-Nombre - Items - Valor - Modificador
+> Nombre - Items - Valor - Modificador
 
 ```jsx
 const valuesCheck = {
@@ -152,7 +156,7 @@ options("Check", valuesCheck, ["carrot"], { display: "check" });
 
 ## Inline Check
 
-Nombre - Items - Valor - Modificador
+> Nombre - Items - Valor - Modificador
 
 ```jsx
 const valuesInlineCheck = {
@@ -165,21 +169,21 @@ options("Inline Check", valuesInlineCheck, ["milk"], {
 });
 ```
 
-![width:900px left:93%](inline-check.PNG)
+![knob storybook](inline-check.PNG)
 
 ## array
 
-Nombre - Items - Separador
+> Nombre - Items - Separador
 
 ```jsx
 array("Items", ["Laptop", "Book", "Whiskey"], ",");
 ```
 
-![width:900px left:93%](array.PNG)
+![knob storybook](array.PNG)
 
 ## date
 
-Nombre - Date
+> Nombre - Date
 
 ```jsx
 const defaultBirthday = new Date("Jan 20 2017 GMT+0");
@@ -190,7 +194,7 @@ date("Birthday", defaultBirthday);
 
 ## object
 
-Nombre - Objeto
+> Nombre - Objeto
 
 ```jsx
 object("Styles", {
@@ -204,7 +208,7 @@ object("Styles", {
 
 ## files
 
-Nombre - Tipo - Valor
+> Nombre - Tipo - Valor
 
 ```jsx
 files("Happy Picture", "image/*", [

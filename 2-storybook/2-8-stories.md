@@ -1,4 +1,4 @@
-# 2-7 Compilacion
+# 2-8 Stories
 
 La compilacion para produccion se ejecutara realizando el siguiente comando:
 
@@ -10,4 +10,4 @@ El producto final deberia haberse construido en la carpeta documentation/storybo
 
 puedes abrirlo en el navegador de tu preferencia para su visualizacion.
 
-Ahora continua con [2-8 Stories](2-8-stories.md)
+Ahora continua con [3-1 Sobre Jest](../3-unit-testing/3-1-sobre-jest.md)
