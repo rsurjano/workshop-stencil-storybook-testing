@@ -1,6 +1,6 @@
 # 1-7 El Lifecycle
 
-![bg fit](./01-primeros-pasos__lifecycle.png)
+![Lifecycle de stenciljs](./01-primeros-pasos__lifecycle.png)
 
 ## Acotaciones sobre el Lifecycle
 
