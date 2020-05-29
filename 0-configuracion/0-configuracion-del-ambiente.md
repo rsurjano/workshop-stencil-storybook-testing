@@ -163,3 +163,5 @@ code --install-extension ms-azuretools.vscode-docker
 ```text
 code --install-extension joelday.docthis
 ```
+
+Ahora continua con [1-Introduccion a Stencil](../1-stencil/1-introduccion.md)
