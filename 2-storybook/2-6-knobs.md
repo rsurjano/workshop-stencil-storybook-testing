@@ -220,7 +220,8 @@ files("Happy Picture", "image/*", [
 
 ## Referencias adicionales
 
-[Documentation Knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
-[Storybook with Knobs](https://storybooks-official.netlify.app/?path=/story/addons-knobs-withknobs--optionsknob)
+- [Documentation Knobs](https://github.com/storybookjs/storybook/tree/master/addons/knobs)
+
+- [Storybook with Knobs](https://storybooks-official.netlify.app/?path=/story/addons-knobs-withknobs--optionsknob)
 
 Ahora continua con [2-7 Compilacion](2-7-compilacion.md)
