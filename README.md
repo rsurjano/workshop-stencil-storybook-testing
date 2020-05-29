@@ -44,11 +44,11 @@
 
 - [Sobre Storybook](2-storybook/2-1-sobre-storybook.md)
 - [Caracteristicas](2-storybook/2-2-caracteristicas.md)
-- [Integracion con Storybooks](2-storybook/2-3-integracion-con-storybooks.md)
+- [Integracion con stencil](2-storybook/2-3-integracion-con-stencil.md)
 - [Configuracion](2-storybook/2-4-configuracion.md)
-- [Compilacion](2-storybook/2-5-compilacion.md)
-- [Addons](2-storybook/2-6-addons.md)
-- [Knobs](2-storybook/2-7-knobs.md)
+- [Addons](2-storybook/2-5-addons.md)
+- [Knobs](2-storybook/2-6-knobs.md)
+- [Compilacion](2-storybook/2-7-compilacion.md)
 
 ### [**Unit Testing**](3-unit-testing)
 
