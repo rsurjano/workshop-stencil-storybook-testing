@@ -16,6 +16,10 @@ export namespace Components {
         "country": string;
         "province": string;
     }
+    interface DemoSwitcher {
+        "buttonNames": string[];
+        "label": string;
+    }
     interface DemoText {
         "lastname": string;
     }
@@ -47,6 +51,12 @@ declare global {
         prototype: HTMLDemoPropsElement;
         new (): HTMLDemoPropsElement;
     };
+    interface HTMLDemoSwitcherElement extends Components.DemoSwitcher, HTMLStencilElement {
+    }
+    var HTMLDemoSwitcherElement: {
+        prototype: HTMLDemoSwitcherElement;
+        new (): HTMLDemoSwitcherElement;
+    };
     interface HTMLDemoTextElement extends Components.DemoText, HTMLStencilElement {
     }
     var HTMLDemoTextElement: {
@@ -62,6 +72,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "demo-label": HTMLDemoLabelElement;
         "demo-props": HTMLDemoPropsElement;
+        "demo-switcher": HTMLDemoSwitcherElement;
         "demo-text": HTMLDemoTextElement;
         "my-component": HTMLMyComponentElement;
     }
@@ -76,6 +87,10 @@ declare namespace LocalJSX {
         "city"?: string;
         "country"?: string;
         "province"?: string;
+    }
+    interface DemoSwitcher {
+        "buttonNames"?: string[];
+        "label"?: string;
     }
     interface DemoText {
         "lastname"?: string;
@@ -97,6 +112,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "demo-label": DemoLabel;
         "demo-props": DemoProps;
+        "demo-switcher": DemoSwitcher;
         "demo-text": DemoText;
         "my-component": MyComponent;
     }
@@ -107,6 +123,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "demo-label": LocalJSX.DemoLabel & JSXBase.HTMLAttributes<HTMLDemoLabelElement>;
             "demo-props": LocalJSX.DemoProps & JSXBase.HTMLAttributes<HTMLDemoPropsElement>;
+            "demo-switcher": LocalJSX.DemoSwitcher & JSXBase.HTMLAttributes<HTMLDemoSwitcherElement>;
             "demo-text": LocalJSX.DemoText & JSXBase.HTMLAttributes<HTMLDemoTextElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }

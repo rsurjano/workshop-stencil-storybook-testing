@@ -15,6 +15,10 @@
 
 ## Dependencies
 
+### Used by
+
+ - [demo-switcher](../demo-switcher)
+
 ### Depends on
 
 - [demo-text](../demo-text)
@@ -23,6 +27,7 @@
 ```mermaid
 graph TD;
   demo-label --> demo-text
+  demo-switcher --> demo-label
   style demo-label fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

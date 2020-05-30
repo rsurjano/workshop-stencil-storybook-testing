@@ -7,12 +7,12 @@
 
 ## Properties
 
-| Property   | Attribute  | Description | Type     | Default     |
-| ---------- | ---------- | ----------- | -------- | ----------- |
-| `age`      | `age`      |             | `number` | `undefined` |
-| `city`     | `city`     |             | `string` | `undefined` |
-| `country`  | `country`  |             | `string` | `'Peru'`    |
-| `province` | `province` |             | `string` | `'Peru'`    |
+| Property   | Attribute  | Description | Type     | Default      |
+| ---------- | ---------- | ----------- | -------- | ------------ |
+| `age`      | `age`      |             | `number` | `undefined`  |
+| `city`     | `city`     |             | `string` | `undefined`  |
+| `country`  | `country`  |             | `string` | `'Peru'`     |
+| `province` | `province` |             | `string` | `'Arequipa'` |
 
 
 ----------------------------------------------
