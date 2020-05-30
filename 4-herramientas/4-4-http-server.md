@@ -18,8 +18,8 @@ actualizar el archivo `package.json` con lo siguiente:
 {
   "devDependencies": {
     "http-server": "0.12.3"
-  }
-  scripts: {
+  },
+  "scripts": {
     "serve.storybook": "http-server documentation/storybook -p 5555",
     "serve.coverage": "http-server documentation/report -p 7777",
     "serve.tests": "http-server documentation/tests -p 8888"
