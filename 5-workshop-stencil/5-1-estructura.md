@@ -5,7 +5,7 @@
 El workshop esta dividido en **ramas**, para revisar todas las ramas ejecuta: `git branch --all`
 para ir a una rama en particular ejecuta: `git checkout {BRANCH_NAME}`
 
-Para iniciar el ejercicio posicionate sobre la rama inicial `git checkout 5-1-estructura-inicial`.
+Para iniciar el ejercicio posicionate sobre la rama inicial `git checkout 5-1-estructura`.
 
 Adicionalmente puedes ir directamente a la solucion saltando a la rama `git checkout 5-1-estructura-final`
 
