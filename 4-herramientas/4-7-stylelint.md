@@ -45,7 +45,7 @@ module.exports = {
       true,
       {
         ignore: ["custom-elements", "default-namespace"],
-        ignoreTypes: ["/auna-/"],
+        ignoreTypes: ["/demo-/"],
       },
     ],
     "function-whitespace-after": "never",

@@ -70,9 +70,9 @@ const config = {
         // carpeta de salida
         resultDir: "documentation/report",
         // titulo del reporte
-        reportTitle: "Reporte de Pruebas unitarias | AUNA",
+        reportTitle: "Reporte de Pruebas unitarias | DEMO",
         // encabezado del reporte
-        reportHeadline: "AUNA",
+        reportHeadline: "DEMO",
         // Indica que procesador de resultado aplicar
         additionalResultsProcessors: ["jest-junit"],
         // indica el link al reporte de cobertura de codigo

@@ -2,22 +2,22 @@
 
 ```jsx
 @Component({
-  tag: 'auna-text',
-  styleUrl: 'auna-text.css'
+  tag: 'demo-text',
+  styleUrl: 'demo-text.css'
 })
 ```
 
 ```scss
 // css aplicado al HOST
-auna-text {
+demo-text {
   width: 100px;
 }
 ```
 
 ```jsx
 @Component({
-  tag: 'auna-text',
-  styleUrl: 'auna-text.css',
+  tag: 'demo-text',
+  styleUrl: 'demo-text.css',
   shadow: true
 })
 ```

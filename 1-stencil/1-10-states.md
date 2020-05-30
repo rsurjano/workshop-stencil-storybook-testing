@@ -3,9 +3,9 @@
 Los estados se usan para datos cambiantes en la aplicacion.
 
 ```jsx
-export class AunaToggleButton {
+export class DemoToggleButton {
   // TAMBIEN SE PUEDE USAR CONSTANTES
-  AUNA_KEY = "awesome_key_goes_here";
+  DEMO_KEY = "awesome_key_goes_here";
 
   @State() open: boolean;
 

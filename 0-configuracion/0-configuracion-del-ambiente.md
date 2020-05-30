@@ -6,6 +6,7 @@ Checklist de dependencias:
 2. git
 3. visual studio code
 4. visual studio code extensions
+5. Stencil CLI
 
 La principal dependencia para hacer aplicaciones en StencilJS es nodejs v12.16.2+. O la ultima version que tengas disponible
 
@@ -162,6 +163,14 @@ code --install-extension ms-azuretools.vscode-docker
 
 ```text
 code --install-extension joelday.docthis
+```
+
+## Instalacion de Stencil CLI
+
+Ejecuta en un Shell o un Command Prompt
+
+```text
+yarn global add
 ```
 
 Ahora continua con [1-Introduccion a Stencil](../1-stencil/1-1-sobre-stencil.md)

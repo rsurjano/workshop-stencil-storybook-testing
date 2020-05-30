@@ -6,7 +6,17 @@ StencilJS
 
 ```shell
 # stencil | comando | ruta del nuevo componente
-stencil generate atoms/auna-text
+stencil generate atoms/demo-text
+# presiona ENTER para generar el componente
+# - scss
+# - .spec.tsx
+# - .e2e.ts
+#
+#The following files have been generated:
+#  - src/components/atoms/demo-text/demo-text.tsx
+#  - src/components/atoms/demo-text/demo-text.css
+#  - src/components/atoms/demo-text/test/demo-text.spec.tsx
+#  - src/components/atoms/demo-text/test/demo-text.e2e.ts
 ```
 
 ## Build

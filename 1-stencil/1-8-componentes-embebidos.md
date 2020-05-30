@@ -10,13 +10,13 @@ Los componentes ya estan importados implicitamente.
 import { Component, h } from "@stencil/core";
 
 @Component({
-  tag: "auna-parent",
+  tag: "demo-parent",
 })
 export class ParentComponent {
   render() {
     return (
       <div>
-        <auna-child color="red"></auna-child>
+        <demo-child color="red"></demo-child>
       </div>
     );
   }
