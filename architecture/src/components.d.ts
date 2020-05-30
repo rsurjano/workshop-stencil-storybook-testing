@@ -6,6 +6,9 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DemoText {
+        "lastname": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +25,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDemoTextElement extends Components.DemoText, HTMLStencilElement {
+    }
+    var HTMLDemoTextElement: {
+        prototype: HTMLDemoTextElement;
+        new (): HTMLDemoTextElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +38,14 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "demo-text": HTMLDemoTextElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface DemoText {
+        "lastname"?: string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +61,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "demo-text": DemoText;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +69,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "demo-text": LocalJSX.DemoText & JSXBase.HTMLAttributes<HTMLDemoTextElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }

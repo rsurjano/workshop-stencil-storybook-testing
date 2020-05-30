@@ -19,10 +19,12 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate": "stencil generate",
+    "serve.stencil": "http-server . -p 9999"
   },
   "devDependencies": {
-    "@stencil/core": "^1.12.2"
+    "@stencil/core": "^1.12.2",
+    "http-server": "0.12.3"
   },
   "license": "MIT"
 }
