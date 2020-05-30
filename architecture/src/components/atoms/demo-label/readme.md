@@ -1,4 +1,4 @@
-# demo-text
+# demo-label
 
 
 
@@ -10,19 +10,20 @@
 | Property   | Attribute  | Description | Type     | Default     |
 | ---------- | ---------- | ----------- | -------- | ----------- |
 | `lastname` | `lastname` |             | `string` | `undefined` |
+| `value`    | `value`    |             | `string` | `undefined` |
 
 
 ## Dependencies
 
-### Used by
+### Depends on
 
- - [demo-label](../demo-label)
+- [demo-text](../demo-text)
 
 ### Graph
 ```mermaid
 graph TD;
   demo-label --> demo-text
-  style demo-text fill:#f9f,stroke:#333,stroke-width:4px
+  style demo-label fill:#f9f,stroke:#333,stroke-width:4px
 ```
 
 ----------------------------------------------

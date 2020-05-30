@@ -6,6 +6,10 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DemoLabel {
+        "lastname": string;
+        "value": string;
+    }
     interface DemoText {
         "lastname": string;
     }
@@ -25,6 +29,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDemoLabelElement extends Components.DemoLabel, HTMLStencilElement {
+    }
+    var HTMLDemoLabelElement: {
+        prototype: HTMLDemoLabelElement;
+        new (): HTMLDemoLabelElement;
+    };
     interface HTMLDemoTextElement extends Components.DemoText, HTMLStencilElement {
     }
     var HTMLDemoTextElement: {
@@ -38,11 +48,16 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "demo-label": HTMLDemoLabelElement;
         "demo-text": HTMLDemoTextElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface DemoLabel {
+        "lastname"?: string;
+        "value"?: string;
+    }
     interface DemoText {
         "lastname"?: string;
     }
@@ -61,6 +76,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "demo-label": DemoLabel;
         "demo-text": DemoText;
         "my-component": MyComponent;
     }
@@ -69,6 +85,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "demo-label": LocalJSX.DemoLabel & JSXBase.HTMLAttributes<HTMLDemoLabelElement>;
             "demo-text": LocalJSX.DemoText & JSXBase.HTMLAttributes<HTMLDemoTextElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
