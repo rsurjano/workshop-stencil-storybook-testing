@@ -13,8 +13,8 @@ Se actualiza el package.json con lo siguiente:
     "eslint-plugin-simple-import-sort": "5.0.3",
     "@typescript-eslint/eslint-plugin": "2.33.0",
     "@typescript-eslint/parser": "2.33.0"
-  }
-  scripts: {
+  },
+  "scripts": {
     "eslint.code": "prettier-eslint --write \"{,!(node_modules)/**/}*.{ts,tsx,jsx}\""
   }
 }
