@@ -9,13 +9,12 @@ export class DemoToggleButton {
 
   @State() open: boolean;
 
-  @Listen('click', { capture: true })
-  handleClick() {
+  handleClick(event: MouseEvent) {
     this.open = !this.open;
   }
 
   render() {
-    return <button>
+    return <button onClick={ev => this.handleClick(ev)}>
       {this.open ? "On" : "Off"}
     </button>;
   }
