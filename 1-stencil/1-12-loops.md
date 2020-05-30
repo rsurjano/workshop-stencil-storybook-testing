@@ -3,14 +3,18 @@
 Se pueden usar Loops para iterar contenido y generar componentes en base a un Arreglo
 
 ```jsx
+remove(index) {
+
+}
+
 render() {
   return (
     <div>
-      {this.todos.map((todo) =>
+      {this.todos.map((todo, idx) =>
         <div key={todo.uid}>
           <div>{todo.taskName}</div>
           <div>{todo.isCompleted}</div>
-          <button onClick={() => this.remove(todo)}>X</button>
+          <button onClick={() => this.remove(idx)}>X</button>
         </div>
       )}
     </div>
