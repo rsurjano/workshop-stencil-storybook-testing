@@ -5,12 +5,20 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
+import { colorBrand, TypeTarget, } from "./components/atoms/demo-link/demo-link";
 export namespace Components {
     interface DemoEvents {
     }
     interface DemoLabel {
         "lastname": string;
         "value": string;
+    }
+    interface DemoLink {
+        "ariaLabel": string;
+        "color": colorBrand;
+        "disable": boolean;
+        "href": string;
+        "target"?: TypeTarget;
     }
     interface DemoProps {
         "age": number;
@@ -61,6 +69,12 @@ declare global {
         prototype: HTMLDemoLabelElement;
         new (): HTMLDemoLabelElement;
     };
+    interface HTMLDemoLinkElement extends Components.DemoLink, HTMLStencilElement {
+    }
+    var HTMLDemoLinkElement: {
+        prototype: HTMLDemoLinkElement;
+        new (): HTMLDemoLinkElement;
+    };
     interface HTMLDemoPropsElement extends Components.DemoProps, HTMLStencilElement {
     }
     var HTMLDemoPropsElement: {
@@ -106,6 +120,7 @@ declare global {
     interface HTMLElementTagNameMap {
         "demo-events": HTMLDemoEventsElement;
         "demo-label": HTMLDemoLabelElement;
+        "demo-link": HTMLDemoLinkElement;
         "demo-props": HTMLDemoPropsElement;
         "demo-slot": HTMLDemoSlotElement;
         "demo-slot-child": HTMLDemoSlotChildElement;
@@ -122,6 +137,14 @@ declare namespace LocalJSX {
     interface DemoLabel {
         "lastname"?: string;
         "value"?: string;
+    }
+    interface DemoLink {
+        "ariaLabel"?: string;
+        "color"?: colorBrand;
+        "disable"?: boolean;
+        "href"?: string;
+        "onLinkClicked"?: (event: CustomEvent<any>) => void;
+        "target"?: TypeTarget;
     }
     interface DemoProps {
         "age"?: number;
@@ -161,6 +184,7 @@ declare namespace LocalJSX {
     interface IntrinsicElements {
         "demo-events": DemoEvents;
         "demo-label": DemoLabel;
+        "demo-link": DemoLink;
         "demo-props": DemoProps;
         "demo-slot": DemoSlot;
         "demo-slot-child": DemoSlotChild;
@@ -176,6 +200,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "demo-events": LocalJSX.DemoEvents & JSXBase.HTMLAttributes<HTMLDemoEventsElement>;
             "demo-label": LocalJSX.DemoLabel & JSXBase.HTMLAttributes<HTMLDemoLabelElement>;
+            "demo-link": LocalJSX.DemoLink & JSXBase.HTMLAttributes<HTMLDemoLinkElement>;
             "demo-props": LocalJSX.DemoProps & JSXBase.HTMLAttributes<HTMLDemoPropsElement>;
             "demo-slot": LocalJSX.DemoSlot & JSXBase.HTMLAttributes<HTMLDemoSlotElement>;
             "demo-slot-child": LocalJSX.DemoSlotChild & JSXBase.HTMLAttributes<HTMLDemoSlotChildElement>;

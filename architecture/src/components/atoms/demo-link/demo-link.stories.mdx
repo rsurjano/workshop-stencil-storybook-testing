@@ -1,0 +1,49 @@
+import { withA11y } from "@storybook/addon-a11y";
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import { text, withKnobs, select, boolean } from "@storybook/addon-knobs";
+
+import { component } from "./demo-link.helpers";
+import readme from "./readme.md";
+
+<Meta
+  title="Atoms|Link"
+  decorators={[withKnobs, withA11y]}
+  parameters={{ readme: { sidebar: readme } }}
+/>
+
+# Atoms | Link
+
+Aqui va la descripcion del componente
+
+## Guia de uso
+
+```html
+<!--  -->
+```
+
+```jsx
+//
+```
+
+## Variaciones
+
+### Default
+
+<Story name="Default">
+  {component({ ariaLabel: "ver detalle", color: "brand1" }, "Ver más")}
+</Story>
+
+### Dark
+
+<Story name="Dark">
+  {component({ ariaLabel: "ver detalle", color: "brand2" }, "Detalle")}
+</Story>
+
+### Disabled
+
+<Story name="Disabled">
+  {component(
+    { ariaLabel: "ver detalle", color: "grey-100", disable: true },
+    "Detalle"
+  )}
+</Story>
