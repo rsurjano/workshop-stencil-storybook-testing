@@ -9,5 +9,13 @@
   <body>
     <!-- YOUR COMPONENTS GOES HERE -->
 
+    <demo-events></demo-events>
+
+<script>
+  document.querySelector('demo-events').addEventListener('clickEmit', function(ev) {
+  console.log('event -> received', ev)
+})
+</script>
+
   </body>
 </html>
