@@ -10,7 +10,7 @@ describe("should test e2e demo-text component", () => {
 
   describe("rendering", () => {
     it("should be able to render", async () => {
-      page = await component({ lastname: "source" });
+      page = await component({ lastname: "source" }, '');
       element = await page.find("demo-text");
       expect(element).toBeTruthy();
     });
@@ -18,7 +18,7 @@ describe("should test e2e demo-text component", () => {
 
   describe("styles", () => {
     it("should match styles for component", async () => {
-      page = await component({ lastname: "source" });
+      page = await component({ lastname: "source" }, '');
       element = await page.find("demo-text");
       const styles = {
         fontSize: "18px",

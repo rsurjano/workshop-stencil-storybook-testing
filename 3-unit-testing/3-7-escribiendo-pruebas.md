@@ -99,11 +99,11 @@ Las pruebas E2E que se han realizado estan basados en revisiones de CSS implemen
 // se importa las dependencias
 import { E2EElement, newE2EPage } from "@stencil/core/testing";
 // se importa la clase
-import { AunaText } from "./demo-text";
+import { DemoText } from "./demo-text";
 // se importa el constructor del test para el componente
 import { buildComponentTest } from "./demo-text.helpers";
 
-const component = buildComponentTest(newE2EPage, [AunaText]);
+const component = buildComponentTest(newE2EPage, [DemoText]);
 
 describe("should test e2e demo-text component", () => {
   // se instancia las interfaces

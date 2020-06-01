@@ -10,7 +10,7 @@ describe("should test demo-text component", () => {
     let page: SpecPage;
 
     it("should render by default with lastname: source", async () => {
-      page = await component({ lastname: "source" });
+      page = await component({ lastname: "source" }, '');
       expect(page.root.shadowRoot).toBeTruthy();
       expect(page.root).toEqualHtml(`
         <demo-text lastname="source">
