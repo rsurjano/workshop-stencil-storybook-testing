@@ -18,6 +18,10 @@ export namespace Components {
         "country": string;
         "province": string;
     }
+    interface DemoSlot {
+    }
+    interface DemoSlotChild {
+    }
     interface DemoStates {
         "firstName": string;
         "lastname": string;
@@ -63,6 +67,18 @@ declare global {
         prototype: HTMLDemoPropsElement;
         new (): HTMLDemoPropsElement;
     };
+    interface HTMLDemoSlotElement extends Components.DemoSlot, HTMLStencilElement {
+    }
+    var HTMLDemoSlotElement: {
+        prototype: HTMLDemoSlotElement;
+        new (): HTMLDemoSlotElement;
+    };
+    interface HTMLDemoSlotChildElement extends Components.DemoSlotChild, HTMLStencilElement {
+    }
+    var HTMLDemoSlotChildElement: {
+        prototype: HTMLDemoSlotChildElement;
+        new (): HTMLDemoSlotChildElement;
+    };
     interface HTMLDemoStatesElement extends Components.DemoStates, HTMLStencilElement {
     }
     var HTMLDemoStatesElement: {
@@ -91,6 +107,8 @@ declare global {
         "demo-events": HTMLDemoEventsElement;
         "demo-label": HTMLDemoLabelElement;
         "demo-props": HTMLDemoPropsElement;
+        "demo-slot": HTMLDemoSlotElement;
+        "demo-slot-child": HTMLDemoSlotChildElement;
         "demo-states": HTMLDemoStatesElement;
         "demo-switcher": HTMLDemoSwitcherElement;
         "demo-text": HTMLDemoTextElement;
@@ -110,6 +128,10 @@ declare namespace LocalJSX {
         "city"?: string;
         "country"?: string;
         "province"?: string;
+    }
+    interface DemoSlot {
+    }
+    interface DemoSlotChild {
     }
     interface DemoStates {
         "firstName"?: string;
@@ -140,6 +162,8 @@ declare namespace LocalJSX {
         "demo-events": DemoEvents;
         "demo-label": DemoLabel;
         "demo-props": DemoProps;
+        "demo-slot": DemoSlot;
+        "demo-slot-child": DemoSlotChild;
         "demo-states": DemoStates;
         "demo-switcher": DemoSwitcher;
         "demo-text": DemoText;
@@ -153,6 +177,8 @@ declare module "@stencil/core" {
             "demo-events": LocalJSX.DemoEvents & JSXBase.HTMLAttributes<HTMLDemoEventsElement>;
             "demo-label": LocalJSX.DemoLabel & JSXBase.HTMLAttributes<HTMLDemoLabelElement>;
             "demo-props": LocalJSX.DemoProps & JSXBase.HTMLAttributes<HTMLDemoPropsElement>;
+            "demo-slot": LocalJSX.DemoSlot & JSXBase.HTMLAttributes<HTMLDemoSlotElement>;
+            "demo-slot-child": LocalJSX.DemoSlotChild & JSXBase.HTMLAttributes<HTMLDemoSlotChildElement>;
             "demo-states": LocalJSX.DemoStates & JSXBase.HTMLAttributes<HTMLDemoStatesElement>;
             "demo-switcher": LocalJSX.DemoSwitcher & JSXBase.HTMLAttributes<HTMLDemoSwitcherElement>;
             "demo-text": LocalJSX.DemoText & JSXBase.HTMLAttributes<HTMLDemoTextElement>;
