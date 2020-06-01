@@ -3,7 +3,7 @@
 La compilacion para produccion se ejecutara realizando el siguiente comando:
 
 ```bash
-yarn run stencil.prod
+yarn run storybook.prod
 ```
 
 El producto final deberia haberse construido en la carpeta documentation/storybook
