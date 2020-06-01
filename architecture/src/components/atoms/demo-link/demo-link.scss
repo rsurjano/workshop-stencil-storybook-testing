@@ -1,0 +1,42 @@
+$brand1: #c3db0b;
+$brand2: #fe890a;
+$brand3: #0060b7;
+$grey-100: #9295a8;
+
+:host {
+  a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.brand1 {
+      color: $brand1 !important;
+    }
+
+    &.brand2 {
+      color: $brand2 !important;
+    }
+
+    &.brand3 {
+      color: $brand3 !important;
+    }
+  }
+
+  .isDisabled {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 375;
+    font-size: 14px;
+    text-align: left;
+    color: $grey-100 !important; //#9194A7;
+    cursor: not-allowed;
+    text-decoration: none;
+  }
+}
