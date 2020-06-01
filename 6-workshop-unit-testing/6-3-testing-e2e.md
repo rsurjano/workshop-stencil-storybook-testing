@@ -19,4 +19,12 @@ Adicionalmente puedes ir directamente a la solucion saltando a la rama `git chec
 
 - revisa [Testing E2E](../3-unit-testing/3-7-escribiendo-pruebas.md)
 
+1. crea el archivo demo-text.e2e.ts en la carpeta /demo-text
+
+2. agrega `font-size: 18px` en el archivo `demo-text.css` dentro de `:host {...}`
+
+3. escribe la prueba E2E basica y verifica el estilo de font-size
+
+4. ejecuta la prueba unitaria
+
 Ahora continua con [7-1 Extensiones](../7-workshop-storybook/7-1-extensiones.md)
