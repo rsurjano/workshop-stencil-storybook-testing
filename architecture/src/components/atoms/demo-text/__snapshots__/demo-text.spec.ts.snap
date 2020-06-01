@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should test demo-text component should render should render by default with lastname: source 1`] = `
+<demo-text lastname="source">
+  <mock:shadow-root>
+    source
+  </mock:shadow-root>
+</demo-text>
+`;
