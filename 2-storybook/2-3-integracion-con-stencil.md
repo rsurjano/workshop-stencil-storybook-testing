@@ -7,18 +7,27 @@ La integracion que se llevara a cabo para Stencil sera del tipo HTML
 Instalaremos todos los paquetes necesarios
 
 ```bash
-yarn add -D @storybook/addon-a11y@5.3.19
-yarn add -D @storybook/addon-actions@5.3.19
-yarn add -D @storybook/addon-backgrounds@5.3.19
+yarn add -D @storybook/addon-a11y@5.3.18
+yarn add -D @storybook/addon-actions@5.3.18
+yarn add -D @storybook/addon-backgrounds@5.3.18
 yarn add -D @storybook/addon-console@1.2.1
-yarn add -D @storybook/addon-docs@5.3.19
-yarn add -D @storybook/addon-jest@5.3.19
-yarn add -D @storybook/addon-knobs@5.3.19
-yarn add -D @storybook/addon-notes@5.3.19
-yarn add -D @storybook/addon-viewport@5.3.19
-yarn add -D @storybook/html@5.3.19
+yarn add -D @storybook/addon-docs@5.3.18
+yarn add -D @storybook/addon-jest@5.3.18
+yarn add -D @storybook/addon-knobs@5.3.18
+yarn add -D @storybook/addon-notes@5.3.18
+yarn add -D @storybook/addon-viewport@5.3.18
+yarn add -D @storybook/html@5.3.18
 yarn add -D @storybook/preset-typescript@3.0.0
 yarn add -D storybook-readme@5.0.8
+yarn add -D @babel/core@7.10.1
+yarn add -D @babel/plugin-syntax-jsx@7.10.1
+yarn add -D @babel/plugin-transform-react-jsx@7.10.1
+yarn add -D babel-loader@8.1.0
+yarn add -D jsx-dom@6.4.15
+yarn add -D react@16.13.1
+yarn add -D react-is@16.13.1
+
+
 ```
 
 Creamos cada uno de los siguientes archivos
@@ -35,7 +44,11 @@ Creamos cada uno de los siguientes archivos
 
 ```html
 <!--  CSS STYLES GOES HERE-->
-<style></style>
+<style>
+  body {
+    color: inherit;
+  }
+</style>
 
 <!-- LIBRARIES GOES HERE -->
 <link
