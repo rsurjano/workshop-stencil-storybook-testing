@@ -14,6 +14,8 @@ export class TodoList {
   })
   todoCompleted: EventEmitter;
 
+  @Event() standardCompleted: EventEmitter; // standard way
+
   todoCompletedHandler(todo: Todo) {
     this.todoCompleted.emit(todo);
   }
@@ -23,7 +25,15 @@ export class TodoList {
 ## Ejemplo de implementacion
 
 ```jsx
-<todo-list onTodoCompleted={(ev) => this.someMethod(ev)} />
+<todo-list todoCompleted={(ev) => this.someMethod(ev)} />
 ```
+
+## Ejemplo de implementacion en HTML
+
+<script>
+  document.querySelector('my-component').addEventListener('todoCompleted', function(ev) {
+  // code goes here
+})
+</script>
 
 Ahora continua con [1-15 Referencias HTML](1-15-referencias-html.md)
