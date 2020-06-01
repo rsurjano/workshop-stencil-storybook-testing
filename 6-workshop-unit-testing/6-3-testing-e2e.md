@@ -17,4 +17,6 @@ Adicionalmente puedes ir directamente a la solucion saltando a la rama `git chec
 
 ## Ejercicio
 
+- revisa [Testing E2E](../3-unit-testing/3-7-escribiendo-pruebas.md)
+
 Ahora continua con [7-1 Extensiones](../7-workshop-storybook/7-1-extensiones.md)

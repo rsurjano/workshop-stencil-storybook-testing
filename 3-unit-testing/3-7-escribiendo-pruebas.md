@@ -93,4 +93,43 @@ it("should toggle isOpened", async () => {
 
 ## Pruebas E2E
 
+Las pruebas E2E que se han realizado estan basados en revisiones de CSS implementado basicamente, por lo que es buena practica ahondar solamente en ese aspecto.
+
+```tsx
+// se importa las dependencias
+import { E2EElement, newE2EPage } from "@stencil/core/testing";
+// se importa la clase
+import { AunaText } from "./demo-text";
+// se importa el constructor del test para el componente
+import { buildComponentTest } from "./demo-text.helpers";
+
+const component = buildComponentTest(newE2EPage, [AunaText]);
+
+describe("should test e2e demo-text component", () => {
+  // se instancia las interfaces
+  let page: E2EElement;
+  let element: E2EElement;
+
+  describe("rendering", () => {
+    it("should be able to render", async () => {
+      page = await component({ lastname: "source" });
+      element = await page.find("demo-text");
+      expect(selector).toBeTruthy();
+    });
+  });
+
+  describe("styles", () => {
+    it("should match styles for subtitle1", async () => {
+      page = await component({ lastname: "source" });
+      x;
+      element = await page.find("demo-text");
+      const styles = {
+        fontSize: "18px",
+      };
+      expect(await element.getComputedStyle()).toMatchObject(styles);
+    });
+  });
+});
+```
+
 Ahora continua con [4-1 Sobre las herramientas](../4-herramientas/4-1-sobre-las-herramientas.md)
