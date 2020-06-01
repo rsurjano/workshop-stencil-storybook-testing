@@ -21,5 +21,12 @@ describe("should test demo-text component", () => {
       `);
       expect(page.root).toMatchSnapshot();
     });
+
+    it("should toggle isOpened", async () => {
+      const page = new DemoText();
+      expect(page.isOpened).toBeFalsy();
+      page.toggle()
+      expect(page.isOpened).toBeTruthy();
+    });
   });
 });
