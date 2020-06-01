@@ -1,3 +1,5 @@
 :host {
   display: block;
+  /* adding font-size */
+  font-size: 18px;
 }
