@@ -76,6 +76,21 @@ describe("should test demo-text component", () => {
 
 ## Pruebas Funcionales
 
+Las pruebas funcionales son pruebas que se enfocan en probar la funcionalidad del codigo, propiedades y metodos del componente.
+
+```jsx
+// nombre de IT
+it("should toggle isOpened", async () => {
+  // instancia el componente
+  const page = new DemoText();
+  // se verifica el valor inicial
+  expect(page.isOpened).toBeFalsy();
+  // se llama el metodo
+  page.toggle();
+  expect(page.isOpened).toBeTruthy();
+});
+```
+
 ## Pruebas E2E
 
 Ahora continua con [4-1 Sobre las herramientas](../4-herramientas/4-1-sobre-las-herramientas.md)
