@@ -1,0 +1,135 @@
+{
+  "numFailedTestSuites": 0,
+  "numFailedTests": 0,
+  "numPassedTestSuites": 3,
+  "numPassedTests": 8,
+  "numPendingTestSuites": 0,
+  "numPendingTests": 0,
+  "numRuntimeErrorTestSuites": 0,
+  "numTodoTests": 0,
+  "numTotalTestSuites": 3,
+  "numTotalTests": 8,
+  "openHandles": [],
+  "snapshot": {
+    "added": 0,
+    "didUpdate": true,
+    "failure": false,
+    "filesAdded": 0,
+    "filesRemoved": 0,
+    "filesRemovedList": [],
+    "filesUnmatched": 0,
+    "filesUpdated": 0,
+    "matched": 1,
+    "total": 1,
+    "unchecked": 0,
+    "uncheckedKeysByFile": [],
+    "unmatched": 0,
+    "updated": 0
+  },
+  "startTime": 1591051078156,
+  "success": true,
+  "testResults": [
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["format"],
+          "failureMessages": [],
+          "fullName": "format returns empty string for no names defined",
+          "location": null,
+          "status": "passed",
+          "title": "returns empty string for no names defined"
+        },
+        {
+          "ancestorTitles": ["format"],
+          "failureMessages": [],
+          "fullName": "format formats just first names",
+          "location": null,
+          "status": "passed",
+          "title": "formats just first names"
+        },
+        {
+          "ancestorTitles": ["format"],
+          "failureMessages": [],
+          "fullName": "format formats first and last names",
+          "location": null,
+          "status": "passed",
+          "title": "formats first and last names"
+        },
+        {
+          "ancestorTitles": ["format"],
+          "failureMessages": [],
+          "fullName": "format formats first, middle and last names",
+          "location": null,
+          "status": "passed",
+          "title": "formats first, middle and last names"
+        }
+      ],
+      "endTime": 1591051080673,
+      "message": "",
+      "name": "/Users/roycarlossurjanozelaya/rsurj/projects/AUNA/workshop-stencil-storybook-testing/architecture/src/utils/utils.spec.ts",
+      "startTime": 1591051079186,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": ["my-component"],
+          "failureMessages": [],
+          "fullName": "my-component renders",
+          "location": null,
+          "status": "passed",
+          "title": "renders"
+        },
+        {
+          "ancestorTitles": ["my-component"],
+          "failureMessages": [],
+          "fullName": "my-component renders with values",
+          "location": null,
+          "status": "passed",
+          "title": "renders with values"
+        }
+      ],
+      "endTime": 1591051080845,
+      "message": "",
+      "name": "/Users/roycarlossurjanozelaya/rsurj/projects/AUNA/workshop-stencil-storybook-testing/architecture/src/components/my-component/my-component.spec.ts",
+      "startTime": 1591051079161,
+      "status": "passed",
+      "summary": ""
+    },
+    {
+      "assertionResults": [
+        {
+          "ancestorTitles": [
+            "should test demo-text component",
+            "should render"
+          ],
+          "failureMessages": [],
+          "fullName": "should test demo-text component should render should render by default with lastname: source",
+          "location": null,
+          "status": "passed",
+          "title": "should render by default with lastname: source"
+        },
+        {
+          "ancestorTitles": [
+            "should test demo-text component",
+            "should render"
+          ],
+          "failureMessages": [],
+          "fullName": "should test demo-text component should render should toggle isOpened",
+          "location": null,
+          "status": "passed",
+          "title": "should toggle isOpened"
+        }
+      ],
+      "endTime": 1591051081031,
+      "message": "",
+      "name": "/Users/roycarlossurjanozelaya/rsurj/projects/AUNA/workshop-stencil-storybook-testing/architecture/src/components/atoms/demo-text/demo-text.spec.ts",
+      "startTime": 1591051079169,
+      "status": "passed",
+      "summary": ""
+    }
+  ],
+  "wasInterrupted": false,
+  "coverageMap": {}
+}

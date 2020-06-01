@@ -1,0 +1,23 @@
+import { withA11y } from "@storybook/addon-a11y";
+import { Meta, Story } from "@storybook/addon-docs/blocks";
+import { withKnobs } from "@storybook/addon-knobs";
+import { withActions } from "@storybook/addon-actions";
+import { withTests } from "@storybook/addon-jest";
+
+import { component } from "./demo-text.helpers";
+import readme from "./readme.md";
+
+<Meta
+  title="Atoms|Text"
+  decorators={[withKnobs, withA11y]}
+  parameters={{
+    readme: { sidebar: readme },
+    jest: ["demo-text.spec.ts"]
+  }}
+/>
+
+# Atoms | Text
+
+Documentacion acerca de demo-text
+
+<Story name="Demo Text">{component({ lastname: "workshop" })}</Story>
