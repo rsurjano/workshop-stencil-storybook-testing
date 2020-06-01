@@ -15,48 +15,36 @@ Adicionalmente puedes ir directamente a la solucion saltando a la rama `git chec
 
 ## Prerequisitos
 
-- Haber entendido la creacion del componente e implementacion de Props
+- Haber entendido la creacion del componente e implementacion de Props/States/Clicks/Metodos
 
 ## Ejercicio
 
-- Revisa sobre: [States](../1-stencil/1-10-states.md), [JSX](../1-stencil/1-11-jsx.md), [Loops](../1-stencil/1-12-loops.md), `@Watch` en [Componentes Stencil](../1-stencil/1-9-props.md) y [Lifecycle](../1-stencil/1-7-el-lifecycle.md)
+- Revisa sobre: [States](../1-stencil/1-10-states.md), [@Watch](../1-stencil/1-9-props.md) y [Lifecycle](../1-stencil/1-7-el-lifecycle.md)
 
-> Parte 1
+1. Crea un componente via CLI con la ruta `atoms/demo-states`
 
-1. Crea un componente via CLI con la ruta `atoms/switcher`
+2. Agrega los siguientes Props
 
-2. Agregale un Prop con nombre label de tipo string
+   - firstName: string = ''
+   - lastname: string = 'workshop'
 
-3. En el render() agrega un `div` que muestre el valor de `label` o sino `NO LABEL`
+3. Agrega el siguiente State
 
-4. Agrega demo-label y asignale en `value` el valor de 'MY LAST NAME'
+   - isEveris: boolean = false;
+   - msgIsEveris: 'NO' | 'SI' = 'NO'
 
-5. Asignale a demo-label `lastname` el valor de 'GAGARIN'
+4. Agrega un label en render() que muestre el contenido de 'msgIsEveris'
 
-6. agrega la implementacion en index.html asignandole un valor a `label` `MY-LABEL`
+5. Agrega un metodo con nombre verify() que verifique si 'isEveris' contiene la palabra 'everis' y actualiza el state msgIsEveris
 
-7. compilar y probar
+6. usando el lifecycle verifica el valor de firstName al inicio
 
-> Parte 2
+7. Agrega un boton en render() con contenido: 'Verificar everis' que al hacer click lance el metodo `verify`
 
-1. Agregale un Prop con nombre buttonNames de tipo array y asignale el valor `['yuri', 'putin']`
+8. implementa en index.html demo-states y el atributo first-name
 
-2. Agrega un state con nombre buttons para guardar el valor de buttonNames cuando cambie
+9. cambia el firstName por otro que no sea everis y verifica la funcionalidad del boton (usa el inspector)
 
-3. Usando el lifecycle asigna el valor buttonNames a buttons antes de cargar el render() inicial
-
-4. Crea el metodo updateButton() y asignale un @Watch que observe 'buttonNames' y que asigne el nuevo valor a buttons
-
-5. en el render agrega un `button` por cada elemento del state button(usa .map)
-
-6. asignale el texto resultado del .map como contenido del elemento `button`
-
-7. agrega un onClick event al botton que lo elimine al hacer click, crea un metodo llamado remove() que haga el trabajo
-
-8. Compilar y probar
-
-9. hacer un document.querySelector al componente y actualizarle la propiedad buttonNames, debe reflejar los cambios en el componente
-
-10. Verificar
+10. compilar y probar.
 
 Ahora continua con [5-5 Eventos](5-5-eventos.md)
