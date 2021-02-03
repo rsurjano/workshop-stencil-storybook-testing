@@ -14,7 +14,7 @@ La principal dependencia para hacer aplicaciones en StencilJS es nodejs v12.16.2
 
 Puedes revisar la version de node corriendo el siguiente comando.
 
-```text
+```ssh
 node -v
 ```
 
@@ -23,7 +23,7 @@ Es muy recomendable que tenga instalado GIT para el versionamiento de codigo y p
 
 Puedes revisar la version de GIT corriendo el siguiente comando en el terminal.
 
-```text
+```ssh
 git -v
 ```
 
@@ -170,7 +170,7 @@ code --install-extension joelday.docthis
 Ejecuta en un Shell o un Command Prompt
 
 ```text
-yarn global add
+yarn global add stencil
 ```
 
 Ahora continua con [1-Introduccion a Stencil](../1-stencil/1-1-sobre-stencil.md)
